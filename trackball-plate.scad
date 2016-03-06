@@ -7,6 +7,7 @@ size = 145;
 // Centre mount hole is 82mm, 86 with bezel.
 hole = 86;
 
+intersection() {
  difference() {
   translate([-size/2, -size/2, 0]) {
     cube([size, size, thickness]);
@@ -28,5 +29,16 @@ hole = 86;
               cylinder(d=3.2, h=2.2*thickness, center=true);
           }
       }
+  }
+ }
+  union() {
+    cylinder(d=size, h=2.2*thickness, center=true);
+    for (angle = [0:90:270]) {
+      rotate([0, 0, angle+45]) {
+        translate([size/2, 0, 0]) {
+          cylinder(d=24, h=2.2*thickness, center=true);
+        }
+      }
+    }
   }
 }
