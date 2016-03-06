@@ -16,8 +16,8 @@ hole = 86;
   // Inserts are 6-7mm diameter, 7mm deep.
   for (angle = [0:90:270]) {
     rotate([0, 0, angle]) {
-      translate([57.5, 0, ]) {
-        cylinder(d=7, h=2.2*thickness, center=true);
+      translate([57.5, 0, thickness - 7]) {
+        cylinder(d=7, h=thickness, center=false);
       }
     }
   }
