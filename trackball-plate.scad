@@ -1,7 +1,7 @@
 // Adaptor plate for mounting a trackball (U-Trak from ultimarc.com) on a metal plate.
 
 // Dimensions in millimetres.
-panel_thickness = 8;
+panel_thickness = 6;
 thickness = 19-3-panel_thickness;
 size = 145;
 // Centre mount hole is 82mm, 86 with bezel.
