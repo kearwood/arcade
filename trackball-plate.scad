@@ -19,7 +19,7 @@ intersection() {
     for (angle = [0:90:270]) {
       rotate([0, 0, angle]) {
         translate([57.5, 0, thickness - 7]) {
-          cylinder(d=7.5, h=thickness, center=false);
+          cylinder(d=7.1, h=thickness, center=false);
         }
       }
     }
