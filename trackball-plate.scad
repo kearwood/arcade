@@ -7,6 +7,10 @@ size = 145;
 // Centre mount hole is 82mm, 86 with bezel.
 hole = 86;
 stud_offset = size/2 * sqrt(2);
+stud_surround = 24;
+
+$fa = 3;
+$fs = 1;
 
 intersection() {
   difference() {
@@ -36,8 +40,11 @@ intersection() {
     cylinder(d=size, h=2.2*thickness, center=true);
     for (angle = [0:90:270]) {
       rotate([0, 0, angle+45]) {
+        translate([0, -stud_surround/2, 0]) {
+          cube([stud_offset, stud_surround, thickness]);
+        }
         translate([stud_offset, 0, 0]) {
-          cylinder(d=24, h=2.2*thickness, center=true);
+          cylinder(d=stud_surround, h=2.2*thickness, center=true);
         }
       }
     }
