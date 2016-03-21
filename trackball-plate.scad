@@ -5,7 +5,7 @@ panel_thickness = 6;
 thickness = 19-3-panel_thickness;
 
 // Centre mount hole is 82mm, 86 with bezel.
-hole = 86;
+hole = 83;
 
 // Mounting studs are at the four corners.
 size = 145;
