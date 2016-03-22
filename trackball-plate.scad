@@ -73,7 +73,7 @@ difference() {
   for (angle = [0:90:270]) {
     rotate([0,0,angle+45]) {
       translate([stud_offset, 0, 0]) {
-        cylinder(d=3.2, h=2.2*thickness, center=true);
+        cylinder(d=4, h=2.2*thickness, center=true);
       }
     }
   }
