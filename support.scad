@@ -3,8 +3,9 @@
 
 // dimensions in millimetres.
 wall = 15;
-height = 50;
+height = 70;
 length = 120;
+width = 90;
 stud_surround = 24;
 
 // Set arc smoothness limits for a better finish.
@@ -14,7 +15,7 @@ $fs = 1;
 difference() {
   union() {
     cube([wall, length, height]);
-    cube([length, wall, height]);
+    cube([width, wall, height]);
     intersection() {
       cube([length, length, height]);
       translate([wall, wall, 0]) {
