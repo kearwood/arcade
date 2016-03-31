@@ -14,8 +14,8 @@ $fs = 1;
 
 difference() {
   union() {
-    cube([wall, length, height]);
-    cube([width, wall, height]);
+    cube([length, wall, height]);
+    cube([wall, width, height]);
     intersection() {
       cube([length, length, height]);
       translate([wall, wall, 0]) {
