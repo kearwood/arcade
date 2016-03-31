@@ -11,6 +11,7 @@ hole = 87;
 size = 145;
 stud_offset = size/2 * sqrt(2);
 stud_surround = 24;
+stud_thickness = max(15, thickness);
 
 // Calculate approximately tangent circle for bracing.
 web_thickness = min(thickness, 6);
@@ -33,7 +34,7 @@ difference() {
           cube([stud_offset, stud_surround, thickness]);
         }
         translate([stud_offset, 0, 0]) {
-          cylinder(d=stud_surround, h=thickness, center=false);
+          cylinder(d=stud_surround, h=stud_thickness);
         }
       }
     }
@@ -73,7 +74,7 @@ difference() {
   for (angle = [0:90:270]) {
     rotate([0,0,angle+45]) {
       translate([stud_offset, 0, 0]) {
-        cylinder(d=4, h=2.2*thickness, center=true);
+        cylinder(d=4, h=2.2*stud_thickness, center=true);
       }
     }
   }
