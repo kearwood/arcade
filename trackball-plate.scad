@@ -65,8 +65,11 @@ difference() {
   // Inserts are 6-7mm diameter, 7mm deep.
   for (angle = [0:90:270]) {
     rotate([0, 0, angle]) {
-      translate([57.5, 0, thickness - 7]) {
-        cylinder(d=7.1, h=thickness, center=false);
+      translate([57.5, 0, thickness - 8]) {
+        cylinder(d=7.1, h=thickness);
+      }
+      translate([57.5, 0, thickness - 1.7]) {
+        cylinder(d=8, h=thickness);
       }
     }
   }
