@@ -2,7 +2,7 @@
 
 // Dimensions in millimetres.
 panel_thickness = 6;
-thickness = 19-3-panel_thickness;
+thickness = 19-5-panel_thickness;
 
 // Centre mount hole is 82mm, 86 with bezel.
 hole = 87;
