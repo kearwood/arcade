@@ -1,0 +1,23 @@
+Bill of materials for arcade controller.
+
+2 x Sanwa JLF-TP-8YT Joystick, with flat mounting plate and 5-pin wiring harness
+
+4 x Sanwa LB-35 Balltop or “LB-35” compatible
+  (Require 2, but recommend having spares as they can break, unscrew, be lost..)
+
+5 x Sanwa OBSN 24mm buttons
+
+16 x Sanwa OBSN 30mm buttons
+
+1 x Ultimarc U-Trak trackball, with RGB Illumination kit and wiring harness
+
+1 x Ultimarc Mini-PAC usb interface, with switch and trackball hardnesses
+
+1 x Arduino for pcm controll of the trackball illumination.
+
+1 x RaspberryPi (optional game host)
+
+1 x Custom metal panel
+
+1 x Custom wood case
+
