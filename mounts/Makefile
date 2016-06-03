@@ -1,4 +1,4 @@
-all: trackball-plate.stl
+all: trackball-plate.gcode
 
 %.stl: %.scad
 	openscad -o $@ $<
